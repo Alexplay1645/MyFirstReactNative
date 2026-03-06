@@ -1,3 +1,21 @@
+
+# React Native Homework #3
+
+Task:
+- 404 page for non-existent routes
+- Button on Home to simulate invalid page
+- Preserve Product Skeleton Loader on Home
+
+Features:
+- **HomeScreen**: ProductSkeleton (2-column), loading state, button to 404
+- **NotFoundScreen**: 404 title, subtitle, button back to Home
+- **Navigation**: React Navigation stack
+
+npm install
+npx react-native start
+npx react-native run-android
+
+________________________________________________________________________
 React Native Homework#2
 
 Task:
@@ -12,7 +30,7 @@ Features:
 Run:
 npm install
 npx react-native run-android
-
+_________________________________________________________________________
 
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
