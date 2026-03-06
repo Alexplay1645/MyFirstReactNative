@@ -7,9 +7,9 @@ Task:
 - Preserve Product Skeleton Loader on Home
 
 Features:
-- **HomeScreen**: ProductSkeleton (2-column), loading state, button to 404
-- **NotFoundScreen**: 404 title, subtitle, button back to Home
-- **Navigation**: React Navigation stack
+- HomeScreen**: ProductSkeleton (2-column), loading state, button to 404
+- NotFoundScreen**: 404 title, subtitle, button back to Home
+- Navigation**: React Navigation stack
 
 npm install
 npx react-native start
