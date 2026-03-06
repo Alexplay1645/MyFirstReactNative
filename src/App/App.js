@@ -1,16 +1,19 @@
-import ProductSkeleton from "./components/ProductSkeleton";
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+import HomeScreen from './screens/HomeScreen';
+import NotFoundScreen from './screens/NotFoundScreen';
+
+const Stack = createNativeStackNavigator();
 
 export default function App() {
-
-  const loading = true;
-
   return (
-    <>
-      {loading ? (
-        <ProductSkeleton />
-      ) : (
-        <ProductsList />
-      )}
-    </>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'Головна' }}/>
+        <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: '404' }}/>
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
