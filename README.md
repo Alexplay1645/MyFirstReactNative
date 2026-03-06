@@ -1,3 +1,19 @@
+React Native Homework#2
+
+Task:
+Create product skeleton loader.
+
+Features:
+- 2 columns product layout
+- image placeholder
+- title placeholder
+- loading state
+
+Run:
+npm install
+npx react-native run-android
+
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
