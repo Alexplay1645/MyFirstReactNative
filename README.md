@@ -10,7 +10,7 @@ Features:
 
 MemoryButtonTypes: constant object with button type, text and enabled state
 MemoryButton: reusable TSX component for calculator buttons
-App: renders buttons using map() and displays active/disabled states
+App: renders buttons using map() and displays active/disabled states.
 
 How to run:
 
