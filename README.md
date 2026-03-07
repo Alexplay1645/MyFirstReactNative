@@ -1,4 +1,24 @@
+React Native Homework #4
 
+Task:
+
+Calculator memory control buttons (MC, MR, M+, M-, MS, MV)
+Create constant object for button types
+Create reusable MemoryButton component
+
+Features:
+
+MemoryButtonTypes: constant object with button type, text and enabled state
+MemoryButton: reusable TSX component for calculator buttons
+App: renders buttons using map() and displays active/disabled states
+
+How to run:
+
+npm install
+npx react-native start
+npx react-native run-android
+
+________________________________________________________________________
 # React Native Homework #3
 
 Task:
@@ -11,6 +31,7 @@ Features:
 - NotFoundScreen**: 404 title, subtitle, button back to Home
 - Navigation**: React Navigation stack
 
+How to run:
 npm install
 npx react-native start
 npx react-native run-android
@@ -27,10 +48,10 @@ Features:
 - title placeholder
 - loading state
 
-Run:
+How to run:
 npm install
 npx react-native run-android
-_________________________________________________________________________
+________________________________________________________________________
 
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
