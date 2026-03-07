@@ -12,6 +12,9 @@ import {
   useSafeAreaInsets,
 } from 'react-native-safe-area-context';
 
+import MemoryButton from './src/constants/MemoryButton';
+import { MemoryButtonTypes } from './src/constants/MemoryButtonTypes';
+
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
 
@@ -25,6 +28,7 @@ function App() {
 
 function AppContent() {
   const safeAreaInsets = useSafeAreaInsets();
+  const buttons = Object.values(MemoryButtonTypes);
 
   return (
     <View style={styles.container}>
@@ -32,6 +36,17 @@ function AppContent() {
         templateFileName="App.tsx"
         safeAreaInsets={safeAreaInsets}
       />
+      
+      <View style={styles.memoryContainer}>
+        {buttons.map((btn, index) => (
+          <MemoryButton
+            key={index}
+            text={btn.text}
+            enabled={btn.enabled}
+          />
+        ))}
+      </View>
+
     </View>
   );
 }
@@ -39,6 +54,13 @@ function AppContent() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+  },
+
+  memoryContainer: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    marginTop: 20,
   },
 });
 
