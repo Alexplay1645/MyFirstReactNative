@@ -2,6 +2,7 @@ import React from "react";
 import { TouchableOpacity, Text, StyleSheet } from "react-native";
 
 type Props = {
+  type: string;
   text: string;
   enabled: boolean;
 };

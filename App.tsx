@@ -36,10 +36,11 @@ function AppContent() {
         templateFileName="App.tsx"
         safeAreaInsets={safeAreaInsets}
       />
-      
+
       <View style={styles.memoryContainer}>
         {buttons.map((btn, index) => (
           <MemoryButton
+            type={btn.type}
             key={index}
             text={btn.text}
             enabled={btn.enabled}
