@@ -1,4 +1,21 @@
+________________________________________________________________________
 
+React Native Homework #6
+
+A mobile calculator built with React Native.
+
+## Features
+- Squaring a number (x²)
+- Square root (√), including a check for positive numbers
+- Uses "useState" for state management
+
+## Testing
+1. Enter a number
+2. Press x² or √
+3. The result is displayed below
+
+## Screenshots
+Located in the "screenshots" folder
 ________________________________________________________________________
 React Native Homework #5
 
