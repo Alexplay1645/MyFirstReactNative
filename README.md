@@ -1,3 +1,28 @@
+
+________________________________________________________________________
+React Native Homework #5
+
+React Native Calculator
+
+Description
+
+This project is a simple mobile calculator built with React Native.
+
+Features
+
+Limits the number of digits on the display.
+
+The minus sign - is not counted as a digit.
+
+The decimal point . is not counted as a digit.
+
+Numbers are automatically formatted with spaces between thousands.
+Example: 1234567.2 → 1 234 567.2
+
+Spaces are not counted as digits and update correctly when deleting numbers.
+
+
+________________________________________________________________________
 React Native Homework #4
 
 Task:
