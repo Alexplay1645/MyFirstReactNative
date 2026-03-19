@@ -1,3 +1,21 @@
+
+
+________________________________________________________________________
+
+React Native Homework #8
+
+Currency App built with React Native.
+
+Features
+Fetch currency rates from NBU API
+Format date for request
+Display currencies using FlatList
+Uses "useState" for state management
+
+Testing
+Press "Load Currency"
+Data loads from API
+Currencies appear in list
 ________________________________________________________________________
 
 React Native Homework #7
