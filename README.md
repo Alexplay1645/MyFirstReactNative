@@ -1,5 +1,33 @@
 ________________________________________________________________________
 
+React Native Homework #7
+
+A React Native "Calculator" application for Android with extended functionality.
+
+Features Added in This Assignment
+
+Trigonometry buttons: sin, cos, tan, ctg
+
+Input validation: tan and ctg operations are checked to ensure valid results.
+
+% Button: calculates a percentage of a number (e.g., 20% of 500 = 100)
+
+Landscape orientation support
+
+Error handling: invalid operations are displayed as "Error" or "Undefined."
+
+Assignment Files
+
+/screens/CalculatorScreen.js — Calculator screen
+
+/components/CalculatorButton.js — Button component
+
+/src/calculatorLogic.js — Functions for % and trigonometry
+
+App.js — Application entry point
+
+________________________________________________________________________
+
 React Native Homework #6
 
 A mobile calculator built with React Native.
