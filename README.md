@@ -2,6 +2,26 @@
 
 ________________________________________________________________________
 
+React Native Homework #9
+
+Currency App built with React Native #2.
+
+Features
+Fetch currency rates from NBU API
+Search and filter currencies
+Search by currency code and full name
+Case-insensitive filtering
+Uses "useState" for state management
+Uses FlatList to display data
+
+Testing
+Press "Load Currency"
+Data loads from API
+Use search input to filter currencies
+Currencies appear in list based on search
+
+________________________________________________________________________
+
 React Native Homework #8
 
 Currency App built with React Native.
