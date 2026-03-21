@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import { View, Button, FlatList, Text } from "react-native";
+import { View, Button, FlatList, TextInput } from "react-native";
 
 import { getCurrencyByDate } from "../api/currencyApi";
-import { formatDate } from "../utils/formatDate";
+import { formatDate } from "../utils/formatDate.js";
+import CurrencyItem from "../components/CurrencyItem";
 
 export default function HomeScreen() {
   const [data, setData] = useState([]);
+  const [search, setSearch] = useState("");
 
   const loadCurrency = async () => {
     const date = formatDate(new Date());
@@ -13,19 +15,38 @@ export default function HomeScreen() {
     setData(result);
   };
 
+  const filteredData = data.filter((item) => {
+    const query = search.toLowerCase();
+
+    return (
+      item.cc.toLowerCase().includes(query) ||
+      item.txt.toLowerCase().includes(query)
+    );
+  });
+
   return (
     <View style={{ flex: 1, marginTop: 50 }}>
       <Button title="Load Currency" onPress={loadCurrency} />
 
+      <TextInput
+        placeholder="Search currency..."
+        value={search}
+        onChangeText={setSearch}
+        style={{
+          borderWidth: 1,
+          margin: 10,
+          padding: 10,
+          borderRadius: 5,
+        }}
+      />
+
       <FlatList
-        data={data}
+        data={filteredData}
         keyExtractor={(item) => item.r030.toString()}
         renderItem={({ item }) => (
-        <Text style={{ padding: 10 }}>
-            {item.cc} - {item.txt} : {item.rate}
-        </Text>
+          <CurrencyItem item={{ code: item.cc, name: item.txt }} />
         )}
       />
     </View>
   );
-}ы
+}
