@@ -2,6 +2,28 @@
 
 ________________________________________________________________________
 
+React Native Homework #10
+
+React Native Homework #Animation
+
+Features
+Touch interaction animation
+Scale up on press
+Scale down after release
+Return to normal size
+Uses Animated API and useRef
+
+Testing
+Press the circle
+Element increases in size
+Then decreases and returns to normal
+
+Run Project:
+
+npx react-native run-android
+
+________________________________________________________________________
+
 React Native Homework #9
 
 Currency App built with React Native #2.
