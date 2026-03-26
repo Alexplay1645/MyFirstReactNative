@@ -2,6 +2,30 @@
 
 ________________________________________________________________________
 
+React Native Homework #11
+
+React Native Homework #Animation_Part#2
+
+Features
+Tap interaction animation
+First tap starts animation
+Infinite repeating animation
+Second tap stops repetition
+Animation completes current cycle before stopping
+Uses Animated API and useRef
+
+Testing
+Tap the element
+Animation starts and repeats infinitely
+Tap again
+Animation stops after completing current cycle
+
+Run Project:
+
+npx react-native run-android
+
+________________________________________________________________________
+
 React Native Homework #10
 
 React Native Homework #Animation
