@@ -2,6 +2,27 @@
 
 ________________________________________________________________________
 
+React Native Homework #12 APK
+
+Release build and gesture detection.
+
+Features:
+- Created release APK build
+- Renamed APK file
+- Uploaded APK to public access
+- Implemented touch gesture animation (scale on press)
+- Used Animated API and useRef
+
+Testing:
+- Press the circle
+- Element increases in size
+- Returns to normal size
+
+Run Project:
+npx react-native run-android
+
+________________________________________________________________________
+
 React Native Homework #11
 
 React Native Homework #Animation_Part#2
