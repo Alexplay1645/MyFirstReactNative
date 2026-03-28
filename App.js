@@ -2,6 +2,7 @@ import React from 'react';
 import HomeScreen from './src/screens/HomeScreen';
 import LiquidTouch from "./components/LiquidTouch";
 import InfiniteAnimation from "./components/InfiniteAnimation";
+import TouchableCircle from "./components/TouchableCircle";
 
 export default function App() {
   return <HomeScreen />;
@@ -13,4 +14,18 @@ export default function App() {
 
 export default function App() {
   return <InfiniteAnimation />;
+}
+
+export default function App() {
+  return (
+    <View
+      style={{
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <TouchableCircle />
+    </View>
+  );
 }
