@@ -2,6 +2,25 @@
 
 ________________________________________________________________________
 
+React Native Homework #13 
+
+Swipe gesture animation.
+
+Features:
+- Detect swipe left gesture using PanResponder
+- Animate element movement to the left
+- Change state after animation completes
+- Dynamic color and text update
+
+Testing:
+- Swipe left on the element
+- Element moves to the left
+- After animation, state changes
+
+Run Project:
+npx react-native run-android
+________________________________________________________________________
+
 React Native Homework #12 APK
 
 Release build and gesture detection.
