@@ -6,12 +6,12 @@ React Native Homework #14
 
 React Native Homework #Swipe Animation
 
-Features
+Features: 
 Swipe in all directions (left, right, up, down)
 Animated movement using Animated API
 Gesture handling with PanGestureHandler
 
-Testing
+Testing: 
 Swipe the box
 Box moves in swipe direction
 Position updates after animation
