@@ -4,6 +4,7 @@ import { View, Button, FlatList, TextInput } from "react-native";
 import { getCurrencyByDate } from "../api/currencyApi";
 import { formatDate } from "../utils/formatDate.js";
 import CurrencyItem from "../components/CurrencyItem";
+import SwipeBox from "../components/SwipeBox";
 
 export default function HomeScreen() {
   const [data, setData] = useState([]);
@@ -26,6 +27,12 @@ export default function HomeScreen() {
 
   return (
     <View style={{ flex: 1, marginTop: 50 }}>
+      
+      {/* 🔥 НАШ SWIPE */}
+      <View style={{ alignItems: "center", marginVertical: 20 }}>
+        <SwipeBox />
+      </View>
+
       <Button title="Load Currency" onPress={loadCurrency} />
 
       <TextInput
