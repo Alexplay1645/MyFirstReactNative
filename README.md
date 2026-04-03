@@ -1,4 +1,20 @@
+React Native Homework #15 FinalProject
 
+React Native Final Project
+
+Features
+- Alert dialog (React Native Alert)
+- Modal window
+- User interaction handling
+- Clean UI
+
+Screenshots
+- Main screen
+- Alert example
+- Modal example
+
+Run Project
+npx react-native run-android
 
 ________________________________________________________________________
 
