@@ -7,6 +7,68 @@ import CurrencyItem from "../components/CurrencyItem";
 import SwipeBox from "../components/SwipeBox";
 import { View, Button, FlatList, TextInput, Alert } from "react-native";
 
+export default function ModalExample() {
+  const [modalVisible, setModalVisible] = useState(false);
+
+  return (
+    <View style={styles.container}>
+      
+      <Button title="Open Modal" onPress={() => setModalVisible(true)} />
+
+      <Modal
+        animationType="slide"
+        transparent={true}
+        visible={modalVisible}
+        onRequestClose={() => setModalVisible(false)}
+      >
+        <View style={styles.centeredView}>
+          <View style={styles.modalView}>
+            <Text style={styles.text}>Hello from Modal!</Text>
+
+            <Pressable
+              style={styles.button}
+              onPress={() => setModalVisible(false)}
+            >
+              <Text style={styles.buttonText}>Close</Text>
+            </Pressable>
+          </View>
+        </View>
+      </Modal>
+
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: "center",
+  },
+  centeredView: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  modalView: {
+    backgroundColor: "white",
+    padding: 20,
+    borderRadius: 10,
+    elevation: 5,
+  },
+  text: {
+    marginBottom: 15,
+    textAlign: "center",
+  },
+  button: {
+    backgroundColor: "#2196F3",
+    padding: 10,
+    borderRadius: 8,
+  },
+  buttonText: {
+    color: "white",
+  },
+});
+
 <Button
   title="Load Currency"
   onPress={() =>
