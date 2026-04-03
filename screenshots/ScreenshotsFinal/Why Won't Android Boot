@@ -1,0 +1,7 @@
+<!-- Your Android build failed because the development environment was configured incorrectly, resulting in several simultaneous issues.
+
+Initially, there were problems with the project path (caused by OneDrive and folder names containing Cyrillic characters); consequently, the system and Gradle were unable to properly locate the necessary files. Subsequently, permission errors arose—Windows was denying access to files within the `node_modules` directory.
+
+Furthermore, the project suffered from a conflict: both standard React Native and Expo were being used simultaneously—despite representing distinct approaches—which caused the build process to fail.
+
+Ultimately, the combination of these factors meant that the project simply could not be built or launched on the emulator. -->
